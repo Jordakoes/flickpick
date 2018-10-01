@@ -6,7 +6,8 @@
 }
 
 body {
-    background-color: #618bff;
+    background: rgb(218,57,135);
+    background: linear-gradient(90deg, rgba(218,57,135,1) 0%, rgba(231,56,87,1) 50%);
 }
 
 h1{
