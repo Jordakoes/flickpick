@@ -86,10 +86,6 @@ body h1 {
 		margin-top: 25px;
 	}
 
-	.vibe-box:focus {
-		background-color: #F4282D;
-	}
-
 }
 
  @keyframes jello-horizontal {
