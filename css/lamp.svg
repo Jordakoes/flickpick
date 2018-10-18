@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1767.749 1083.795">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #202020;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #202020;
+        stroke-width: 30px;
+      }
+    </style>
+  </defs>
+  <g id="Group_25" data-name="Group 25" transform="translate(-150.887 0.563)">
+    <path id="Path_6" data-name="Path 6" class="cls-1" d="M2350.725-1029.939,3908.636-756.2v597.433H2706.584Z" transform="translate(-1990 1242)"/>
+    <g id="Group_24" data-name="Group 24">
+      <line id="Line_1" data-name="Line 1" class="cls-2" x1="6" y1="183" transform="matrix(0.999, 0.035, -0.035, 0.999, 262.695, 0.451)"/>
+      <g id="Group_22" data-name="Group 22" transform="translate(30.785 -78.698) rotate(13)">
+        <circle id="Ellipse_1" data-name="Ellipse 1" class="cls-1" cx="58" cy="58" r="58" transform="translate(270 131)"/>
+        <path id="Rectangle_19" data-name="Rectangle 19" class="cls-1" d="M30,0H189a0,0,0,0,1,0,0V119a0,0,0,0,1,0,0H30A30,30,0,0,1,0,89V30A30,30,0,0,1,30,0Z" transform="translate(214.483 69.438) rotate(25)"/>
+      </g>
+    </g>
+  </g>
+</svg>
