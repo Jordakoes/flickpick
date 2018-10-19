@@ -63,28 +63,3 @@ button:hover {
     height: 20px;
     width: 150px;
 }
-
-@media screen and (max-width: 600px) {
-
-  button:hover {
-    background-color: #665ef2;
-    cursor: pointer;
-    animation: hoverRemove 0.9s both;
-}
-
-@keyframes hoverRemove {
-	0% {
-		background-color: #202020;
-		cursor: pointer;
-	}
-	50% {
-		background-color: #665ef2;
-		cursor: pointer;
-	}
-	100% {
-		background-color: #202020;
-		cursor: pointer;
-	}
-}
-
-}
