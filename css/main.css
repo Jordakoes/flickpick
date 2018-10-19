@@ -17,6 +17,12 @@ body h1 {
 	color: #f2f2f2;
 }
 
+a {
+	color: #f2f2f2;
+  text-decoration: none;
+}
+
+
 .grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
