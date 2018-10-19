@@ -11,7 +11,7 @@ function apiCall() {
     var randomMovie = randomMovieArray[randomNumber];
 
     //choose between either titles, or ID's, I am using ID's here
-    $.getJSON('http://www.omdbapi.com/?apikey=d7a28dd2&i=' + encodeURI(randomMovie)).then(function(response)
+    $.getJSON('https://www.omdbapi.com/?apikey=d7a28dd2&i=' + encodeURI(randomMovie)).then(function(response)
     //$.getJSON('http://www.omdbapi.com/?apikey=d7a28dd2&t=' + encodeURI(randomMovie)).then(function(response)
     
     
