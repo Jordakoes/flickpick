@@ -1,4 +1,3 @@
-
 // array with movie titles 
 //var randomMovieArray = ['Star Wars', 'Game of Thrones', 'Lord of The Rings', 'Harry Potter'];
 
@@ -40,6 +39,6 @@ function apiCall() {
     });
 }
 
-$('button').click(function(){
+$('#generate').click(function(){
     apiCall();
 });
