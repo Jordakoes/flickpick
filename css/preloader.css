@@ -11,10 +11,7 @@
 	top: 0;
 	left: 0;
 	right: 0;
-    bottom: 0;	
-    
-    overflow:hidden;
-    overflow-y:hidden;
+  bottom: 0;	
 }
 
 .preloader h1 {
@@ -49,7 +46,6 @@
 @media screen and (max-width: 600px) {
 	
 	.preloader h1 {
-		animation: jello-horizontal 0.9s infinite both;
 		font-size: 25px;
 	}
 }
