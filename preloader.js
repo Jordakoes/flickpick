@@ -1,12 +1,11 @@
 document.addEventListener("DOMContentLoaded", function(){
 	$('.preloader')
-	.delay(2000)
+	.delay(2300)
 	.fadeOut('slow')
 
 	$('.preloader h1')
-	.delay(1000)
+	.delay(1700)
 	.fadeOut('slow');
-
 });
 
 //trying to get the scrollbar during preloader to hide...
