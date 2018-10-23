@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(){
+	// adding this line hides the scrollbar, but also in the main document
+	// $("body").css("overflow", "hidden") 
 	$('.preloader')
 	.delay(2300)
 	.fadeOut('slow')
@@ -7,7 +9,3 @@ document.addEventListener("DOMContentLoaded", function(){
 	.delay(1700)
 	.fadeOut('slow');
 });
-
-//trying to get the scrollbar during preloader to hide...
-//document.body.style.overflow = 'hidden';
-//document.getElementById("test").style.overflow = 'hidden';

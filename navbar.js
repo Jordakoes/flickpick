@@ -5,8 +5,9 @@ const $menu = $('.overlay');
 $icon.on('click', function(){
   if(!$menu.hasClass('active')) {
         $menu.fadeIn().toggleClass('active');
-        $(".img:hover").css("color", "#f2f2f2");
+        $("body").css("overflow", "hidden");
   } else {
     $menu.fadeOut().removeClass('active');
+    $("body").css("overflow", "auto");
   }
 });
