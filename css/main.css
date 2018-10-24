@@ -49,6 +49,7 @@ a {
 .vibe-box:hover {
 	background-color: #F4282D;
 	cursor: pointer;
+	transform: translateX(-10px);	
 }
 
 .animation-settings {

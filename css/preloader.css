@@ -17,7 +17,8 @@
 .preloader h1 {
 	/* animation: jello-horizontal 0.9s infinite both; */
 	animation: heartbeat 1.5s ease-in-out infinite both;
-	font-size: 50px;
+	font-size: 75px;
+	text-shadow: 3px 1px 10px #202020;
 }
 
 /* ----------------------------------------------
@@ -82,6 +83,6 @@
 @media screen and (max-width: 600px) {
 	
 	.preloader h1 {
-		font-size: 25px;
+		font-size: 45px;
 	}
 }
