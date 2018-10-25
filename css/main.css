@@ -1,6 +1,6 @@
 html {
 	margin: 100px;
-	margin-top: 70px;
+	margin-top: 0px;
 	font-family: 'Raleway', sans-serif;
 }
 
@@ -8,7 +8,9 @@ body {
 	margin: 0 auto;
 	max-width: 56em;
 	display: grid;
+	/* background-color: #202020; */
 	background-color: #202020;
+
 }
 
 body h1 {
@@ -21,9 +23,9 @@ body h1 {
 	font-family: 'Lobster', cursive;
 }
 
-a {
+a.vibe-box {
 	color: #f2f2f2;
-  text-decoration: none;
+	text-decoration: none;
 }
 
 .grid {
@@ -53,11 +55,11 @@ a {
 .vibe-box:hover {
 	background-color: #F4282D;
 	cursor: pointer;
-	transform: translateX(-10px);	
+	transform: translateX(-10px);
 }
 
 .animation-settings {
-  animation-duration: .7s;
+  	animation-duration: .7s;
 	animation-delay: 2.5s;
 }
 
@@ -70,7 +72,7 @@ a {
 
 	html {
 		margin: 50px;
-		margin-top: 35px;
+		margin-top: 0px;
 	}
 
 	.vibe-box {

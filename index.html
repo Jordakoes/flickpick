@@ -27,16 +27,24 @@
     </div>
 
     <!-- Navbar test start -->
-    <i class="img fas fa-bars fa-3x"></i>
-
-    <div class="overlay">
-        <div class="text">
-            <ul>
-                <li>Back</li>
-                <li>Vibes</li>
-            </ul>
+    <div class="navbar-wrapper animation-settings animated fadeInUp">
+        <div class="navbar-logo">
+            <h2>Flick Pick</h2>
+        </div>
+        <div class="navbar-menu">
+            <i class="img fas fa-bars fa-3x"></i>
         </div>
     </div>
+    <!-- Placing overlay outside of navbar rapper for animate.css animations to work -->
+    <div class="overlay">
+            <div class="text">
+                <ul>
+                    <a class="menulink" href="index.html">Reload INDEX</a>
+                    <li>Back</li>
+                    <li>Vibes</li>
+                </ul>
+            </div>
+        </div>
     <!-- Navbar test end -->
 
     <!-- Base html -->
@@ -44,8 +52,8 @@
 
     <div class="grid animation-settings animated fadeInUp">
         
-        <a href="movieGenerator.html"><div class="vibe-box" onclick="">Action</div></a>
-        <a href="movieGenerator.html"><div class="vibe-box">Drama</div></a>
+        <a class="vibe-box" href="movieGenerator.html">Action</a>
+        <a class="vibe-box" href="movieGenerator.html">Drama</a>
         <div class="vibe-box">Space</div>
         <div class="vibe-box">War</div>
         <div class="vibe-box">Western</div>
@@ -66,5 +74,6 @@
     <!-- Load personal js file -->
     <script src="preloader.js"></script>
     <script src="navbar.js"></script>
+    
 </body>
 </html>

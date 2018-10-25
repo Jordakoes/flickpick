@@ -16,7 +16,6 @@
 .text {
   height: 100%;
   display: grid;
-  
 }
 
 ul {
@@ -25,7 +24,7 @@ ul {
   padding: 0;
 }
 
-ul li {
+ul li{
   list-style-type: none;
   margin: 20px 0;
   font-size: 30px;
@@ -38,18 +37,33 @@ ul:hover li:hover {
 }
 
 .img {
-  position: absolute;
-  /* Changing position to fixed
-  makes the entire img scroll with the page */
-  top: 80px;
-  right: 170px;
-  width: 50px;
   z-index: 200;
-
   height: 50px;
   width: 50px;
   cursor: pointer;
   color: #f2f2f2;
+}
+
+/* Navbar area */
+.navbar-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  margin-top: 20px;
+}
+
+.navbar-logo {
+  color: #f2f2f2;
+  font-family: 'Lobster', cursive;
+}
+
+i.img.fas {
+  transition: .2s ease-in-out;
+}
+
+i.img.fas:hover {
+  color: #F4282D;
+  cursor: pointer;
 }
 
 /* .img:hover {
@@ -57,11 +71,7 @@ ul:hover li:hover {
 } */
 
 @media screen and (max-width: 600px) {
-  .img {
-    position: absolute;
-    /* Changing position to fixed
-    makes the entire img scroll with the page */
-    top: 35px;
-    right: 20px;
+  .navbar-wrapper {
+    margin-top: 10px;
   }
 }
