@@ -51,11 +51,12 @@ ul:hover li:hover {
 	align-items: center;
 	justify-content: space-between;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 a.logo {
   color: #f2f2f2;
-  font-family: 'Lobster', cursive;
+  font-family: 'Bungee Shade', cursive;
   text-decoration: none;
   font-size: 20px;
 }
