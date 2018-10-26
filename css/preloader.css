@@ -3,8 +3,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #f4282d;
-	color: #f2f2f2;
+	background-color: #111517;
 
 	position: fixed;
 	z-index: 9999;
@@ -17,8 +16,8 @@
 .preloader h1 {
 	/* animation: jello-horizontal 0.9s infinite both; */
 	animation: heartbeat 1.5s ease-in-out infinite both;
-	font-size: 85px;
-	text-shadow: 3px 1px 10px #202020;
+  font-size: 85px;
+  color: #FFCD3C;
 }
 
 @media screen and (max-width: 600px) {

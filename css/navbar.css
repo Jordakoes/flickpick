@@ -7,7 +7,7 @@
   left: 0;
   z-index: 100;
   
-  background: #f4282d;
+  background: #111517;
   color: #f2f2f2;
   font-weight: bold;
   text-align: center;
@@ -28,12 +28,13 @@ ul li{
   list-style-type: none;
   margin: 20px 0;
   font-size: 30px;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 
 ul:hover li:hover {
   transform: translateX(-10px);
+  color: #FFCD3C;
 }
 
 .img {
@@ -52,17 +53,22 @@ ul:hover li:hover {
   margin-top: 20px;
 }
 
-.navbar-logo {
+a.logo {
   color: #f2f2f2;
   font-family: 'Lobster', cursive;
+  text-decoration: none;
+  font-size: 20px;
 }
 
-i.img.fas {
+i.img.fas, a.logo {
+  display: flex;
+	align-items: center;
+	justify-content: center;
   transition: .2s ease-in-out;
 }
 
-i.img.fas:hover {
-  color: #F4282D;
+i.img.fas:hover, a.logo:hover {
+  color: #E6B31E;
   cursor: pointer;
 }
 
