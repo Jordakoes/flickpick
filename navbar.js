@@ -14,20 +14,8 @@ $icon.on('click', function(){
 
 //Menu icon animation on click
 
-// $(document).ready(function(){
-//   $("button").click(function(){
-//       $("button").addClass("is-active"); 
-//   });
-// });
-
-//second click test thingy
-var clicks = 0;
-
-$("button").click(function() {
-    if (clicks == 0){
-      $("button").addClass("is-active"); 
-    } else{
-      $("button").removeClass("is-active"); 
-    }
-    ++clicks;
+$(document).ready(function(){
+  $("button").click(function(){
+      $("button").toggleClass("is-active");
+  });
 });
