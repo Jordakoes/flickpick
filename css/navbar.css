@@ -69,18 +69,18 @@ a.logo {
   /* margin-left: 10px; */
 }
 
-i.img.fas, a.logo {
+#icon, a.logo {
   display: flex;
 	align-items: center;
 	justify-content: center;
   transition: .2s ease-in-out;
 }
 
-i.img.fas:hover, a.logo:hover {
+#icon:hover, a.logo:hover {
   color: #E6B31E;
   cursor: pointer;
 }
 
-/* .img:hover {
-  color: #f4282d;
-} */
+button#icon {
+  color: white;
+}
