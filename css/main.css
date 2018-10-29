@@ -1,15 +1,28 @@
+/* 
+top margin is 25px
+right margin is 50px
+bottom margin is 75px
+left margin is 100px
+
+top and bottom margins are 25px
+right and left margins are 50px
+*/
+
 html {
+	/* TODO: Check if lines 13+14 can be removed */
 	/* margin: 100px; */
-	margin-top: 0px;
+	/* margin-top: 0px; */
 	font-family: 'Karla', sans-serif;
 }
 
 .content {
-	margin: 100px;
+	margin: 100px auto;
+	max-width: 70em;
 }
 
 body {
-	margin: 0 auto;
+	/* FIXME: setting margin 0 gets 3 columns on ipad.. */
+	margin: 0;
 	/* max-width: 56em; */
 	display: grid;
 	background-color: #111517;
@@ -56,7 +69,7 @@ a.vibe-box {
 	border-radius: 8px;
 	font-weight: bold;
 	font-size: 30px;
-
+	/* TODO: Check if this webkit can be removed */
 	-webkit-transition: .2s ease-in-out; /* Safari */
 	transition: .2s ease-in-out;
 }
@@ -72,11 +85,35 @@ a.vibe-box {
 	animation-delay: 2.5s;
 }
 
+/* Footer */
+footer {
+	font-weight: bold;
+	font-size: 25px;
+	color: #f2f2f2;
+	/* TODO: Needs to be more specific */
+	margin-top: 25px;
+}
+
+footer .heart {
+	/* TODO: Check if heart color is working */
+    color: #f02b67;
+}
+
+/* Smaller screens */
+@media screen and (max-width: 1200px) {
+	
+	.content {
+		margin: 0 50px 50px 50px;
+	}
+	
+}
+
 @media screen and (max-width: 900px) {
 	
 	body h1 {
 		font-size: 4em;
 	}
+
 }
 
 @media screen and (max-width: 600px) {
