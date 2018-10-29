@@ -38,7 +38,7 @@ ul:hover li:hover {
 }
 
 .img {
-  z-index: 200;
+  /* z-index: 200; */
   height: 50px;
   width: 50px;
   cursor: pointer;
@@ -46,12 +46,16 @@ ul:hover li:hover {
 }
 
 /* Navbar area */
-.navbar-wrapper {
+#navbar {
+  background-color: #111517;
 	display: flex;
-	align-items: center;
+	align-items: start;
 	justify-content: space-between;
-  margin-top: 20px;
-  margin-bottom: 20px;
+
+  /* sticky navbar */
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
 }
 
 a.logo {
@@ -59,6 +63,7 @@ a.logo {
   font-family: 'Bungee Shade', cursive;
   text-decoration: none;
   font-size: 20px;
+  margin-left: 10px;
 }
 
 i.img.fas, a.logo {
@@ -76,9 +81,3 @@ i.img.fas:hover, a.logo:hover {
 /* .img:hover {
   color: #f4282d;
 } */
-
-@media screen and (max-width: 600px) {
-  .navbar-wrapper {
-    margin-top: 10px;
-  }
-}
