@@ -19,6 +19,8 @@
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <!-- Load FontAwesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <!-- Load AOSjs (scrollreveal) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 <body>
@@ -61,20 +63,20 @@
                 
                 <a class="vibe-box" href="movieGenerator.html">Action</a>
                 <a class="vibe-box" href="movieGenerator.html">Adventure</a>
-                <div class="vibe-box">Animation</div>
-                <div class="vibe-box">Comedy</div>
-                <div class="vibe-box">Crime</div>
-                <div class="vibe-box">Disaster</div>
-                <div class="vibe-box">Drama</div>
-                <div class="vibe-box">Fantasy</div>
-                <div class="vibe-box">Hero</div>
-                <div class="vibe-box">Horror</div>
-                <div class="vibe-box">Romance</div>
-                <div class="vibe-box">Sci-fi</div>
-                <div class="vibe-box">Space</div>
-                <div class="vibe-box">Thriller</div>
-                <div class="vibe-box">War</div>
-                <div class="vibe-box">Western</div>
+                <div class="vibe-box" data-aos="fade-up">Animation</div>
+                <div class="vibe-box" data-aos="fade-up">Comedy</div>
+                <div class="vibe-box" data-aos="fade-up">Crime</div>
+                <div class="vibe-box" data-aos="fade-up">Disaster</div>
+                <div class="vibe-box" data-aos="fade-up">Drama</div>
+                <div class="vibe-box" data-aos="fade-up">Fantasy</div>
+                <div class="vibe-box" data-aos="fade-up">Hero</div>
+                <div class="vibe-box" data-aos="fade-up">Horror</div>
+                <div class="vibe-box" data-aos="fade-up">Romance</div>
+                <div class="vibe-box" data-aos="fade-up">Sci-fi</div>
+                <div class="vibe-box" data-aos="fade-up">Space</div>
+                <div class="vibe-box" data-aos="fade-up">Thriller</div>
+                <div class="vibe-box" data-aos="fade-up">War</div>
+                <div class="vibe-box" data-aos="fade-up">Western</div>
                 
             </div>
 
@@ -89,6 +91,11 @@
     <!-- Load personal js file -->
     <script src="preloader.js"></script>
     <script src="navbar.js"></script>
+    <!-- Load AOS js file -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     
 </body>
 </html>
