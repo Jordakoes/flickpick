@@ -83,4 +83,6 @@ a.logo {
 
 button#icon {
   color: white;
+  /* Removing the outline when clicked */
+  outline:none;
 }
