@@ -1,9 +1,3 @@
-/* FIXME: Adding this removes the weird margin around the navbar
-remove this if it breaks something else */
-html, body {
-  margin: 0;
-}
-
 .overlay {
   display: none;
   width: 100%;
