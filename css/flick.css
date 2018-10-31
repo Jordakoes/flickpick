@@ -1,51 +1,38 @@
-/* TODO: Fix weird pink bar */
+body, html {
+    /* Settings maxheight instead of
+    height property gets rid of
+    the scrollbar */
+    /* max-height: 100%; */
+    height: 100%;
+    margin: 0;
+    background-color: #111517;
+}
 
-body, html, .wrapper {
-    height: 100vh;
+html {
     font-family: 'Karla', sans-serif;
-    /* FIXME: Weird empty space under navbar
-    or under grid, background-color is temp fix*/
-    background-color: pink;
-}
-  
-.grid-container {
-      display: grid;
-       height: 100vh;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 0.3fr 1.7fr;
-      grid-gap: 0;
-      grid-template-areas: ". ." ". .";
 }
 
-.OMDb-API-Description { 
-    grid-area: 2 / 1 / 3 / 2; 
-}
-    
-.OMDb-API-Poster { 
-    grid-area: 2 / 2 / 3 / 3; 
-}
-    
-.Navbar { 
-    grid-area: 1 / 1 / 2 / 3; 
+body {	
+    display: grid;
 }
 
-.poster {
-    width: 70%;
-    height: 70%;
-    /* TODO: Set responsive dimensions for 
-    the poster */
-    /* Half the origin dimensions */
-    max-height: 597px;
-    max-width: 400px;
-    border-radius: 8px;
+.wrapper1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;	
+    /* TODO: This needs to be more specific
+    now its just a couple pixels
+    under the navbar 
+    94 is more specific, but it needs
+    to be % or something similar*/
+    margin-top: 94px;
+    height: 100%;
 }
 
-.animation-settings {
-    animation-duration: .7s;
-    animation-delay: 2.5s;
+.container {
+    height: 100%;
 }
 
-.OMDb-API-Description {
+.box1 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,9 +41,38 @@ body, html, .wrapper {
     color: #f2f2f2;
 }
 
-.OMDb-API-Poster {
+.desciption h1 {
+    font-size: 50px;
+}
+
+button {
+    border: none;
+    height: 50px;
+    width: 150px;
+    margin: 10px;
+}
+
+.box2 {
+    /* height: 100%; */
+    /* align-self: center;
+    justify-self: center; */
     display: flex;
     align-items: center;
-    justify-content: center;  
-    background-color: salmon
+    justify-content: center;
+    background-color: #111517;
+}
+
+.poster {
+    height: 80%;
+    width: 80%;
+    border-radius: 8px;
+    /* FIXME: Is there a better 
+    solution to this min-width
+    property? */
+    min-width: 400px;
+}
+
+.animation-settings {
+    animation-duration: .7s;
+    animation-delay: 2.5s;
 }
