@@ -15,6 +15,7 @@ $icon.on('click', function(){
 //Menu icon animation on click
 
 $(document).ready(function(){
+  //TODO: Specify a class/id for the button
   $("button").click(function(){
       $("button").toggleClass("is-active");
   });
