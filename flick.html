@@ -24,7 +24,7 @@
 <body>
 
     <div class="preloader">
-        <h1>Lay back, we got this.</h1>
+        <h1>Sit back, we got this.</h1>
     </div>
 
     <div class="wrapper">
@@ -61,12 +61,15 @@
                 <h1 id="movie-title">Movie title</h1>
                 <h2 id="duration">Duration</h2>
                 <h3 id="plot">Plot</h3>
-                <button id=IMDb-btn>IMDb</button>
-                <button id="RT-btn">Rotten</button>
+                <div class="flex-btn">
+                    <button class="rating-btn" id=IMDb-btn>IMDb</button>
+                    <button class="rating-btn" id="RT-btn">Rotten</button>
+                </div>
             </div>
 
             <div class="OMDb-API-Poster">
-                <img class="poster" src="/images/lordofwar.jpg">
+                <img id="poster" src="/images/lordofwar.jpg">
+                <button id="next-btn" class="rating-btn">Next movie</button>
             </div>
                 
         </div>
@@ -76,6 +79,7 @@
     </div>
 
     <!-- Load personal js file -->
+    <script src="OMDb.js"></script>
     <script src="preloader.js"></script>
     <script src="navbar.js"></script>
     

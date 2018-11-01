@@ -1,4 +1,8 @@
-/* TODO: Fix weird pink bar */
+T/* TODO: Fix weird pink bar
+Caused by: navbar isn't the full height
+of the space given by grid...
+currently fixed by matching padding 
+to the grid size... Needs fixing! */
 
 body, html, .wrapper {
     height: 100vh;
@@ -6,15 +10,18 @@ body, html, .wrapper {
     /* FIXME: Weird empty space under navbar
     or under grid, background-color is temp fix*/
     background-color: pink;
+    margin: 0;
 }
   
 .grid-container {
-      display: grid;
-       height: 100vh;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 0.3fr 1.7fr;
-      grid-gap: 0;
-      grid-template-areas: ". ." ". .";
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .1fr 1fr;
+    grid-gap: 0;
+    grid-template-areas: 
+    ". ." 
+    ". .";
 }
 
 .OMDb-API-Description { 
@@ -29,20 +36,29 @@ body, html, .wrapper {
     grid-area: 1 / 1 / 2 / 3; 
 }
 
-.poster {
+.Navbar {
+    background-color: slateblue;
+}
+
+/* FIXME: Ugly fix for navbar size */
+#navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 10%;
+}
+
+#poster {
     width: 70%;
     height: 70%;
     /* TODO: Set responsive dimensions for 
     the poster */
+
     /* Half the origin dimensions */
     max-height: 597px;
     max-width: 400px;
     border-radius: 8px;
-}
 
-.animation-settings {
-    animation-duration: .7s;
-    animation-delay: 2.5s;
+    margin-bottom: 20px;
 }
 
 .OMDb-API-Description {
@@ -58,5 +74,73 @@ body, html, .wrapper {
     display: flex;
     align-items: center;
     justify-content: center;  
+    flex-direction: column;
     background-color: salmon
+}
+
+#movie-title {
+    font-size: 4em;
+    margin: 0;
+    padding: 0;
+
+    width: 85%;
+    height: 20%;
+    background-color: pink;
+
+}
+
+#duration {
+    font-size: 3em;
+    margin: 0;
+    padding: 0;
+
+    width: 85%;
+    height: 7%;
+    background-color: purple;
+}
+
+#plot {
+    font-size: 1.5em;
+
+    width: 85%;
+    height: 40%;
+    background-color: salmon;
+}
+
+/* FIXME: Is this needed? */
+.flex-btn {
+}
+
+/* TODO: Size the buttons! */
+.rating-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 20px;
+
+    border: none;
+    height: 75px;
+    width: 250px;
+    border-radius: 8px;
+    font-size: 25px;
+    font-weight: bold;
+    outline: none;
+}
+
+.rating-btn:hover {
+    opacity: .7;
+}
+
+#IMDb-btn {
+    background-color: #f5de50;
+}
+
+#RT-btn {
+    background-color: #ed1c27;
+}
+
+.animation-settings {
+    animation-duration: .7s;
+    animation-delay: 2.5s;
 }
