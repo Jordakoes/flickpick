@@ -64,20 +64,30 @@ a.vibe-box {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-direction: column-reverse;
 	height: 100%;
 	width: 100%;
 	border-radius: 8px;
 	font-weight: bold;
 	font-size: 30px;
-	/* TODO: Check if this webkit can be removed */
-	-webkit-transition: .2s ease-in-out; /* Safari */
-	transition: .2s ease-in-out;
+	transition: .3s ease-in-out;
 }
 
 .vibe-box:hover {
 	background-color: #E6B31E;
 	cursor: pointer;
-	transform: translateX(-10px);
+	/* transform: translateX(-10px); */
+	transform: scale(1.1);
+	font-size: 0;
+	/* transition-delay: .1s; */
+}
+
+/* To show descriptive text in the vibe box */
+.vibe-box:hover:after {
+	content: attr(data-hover);
+	font-size: 30px;
+	text-align: center;
+	color: #202020;
 }
 
 .animation-settings {
