@@ -1,4 +1,4 @@
-T/* TODO: Fix weird pink bar
+/* TODO: Fix weird pink bar
 Caused by: navbar isn't the full height
 of the space given by grid...
 currently fixed by matching padding 
@@ -103,12 +103,13 @@ body, html, .wrapper {
     font-size: 1.5em;
 
     width: 85%;
-    height: 40%;
+    height: 30%;
     background-color: salmon;
 }
 
 /* FIXME: Is this needed? */
 .flex-btn {
+    display: flex;
 }
 
 /* TODO: Size the buttons! */
@@ -120,10 +121,10 @@ body, html, .wrapper {
     margin: 20px;
 
     border: none;
-    height: 75px;
-    width: 250px;
+    height: 30px;
+    width: 150px;
     border-radius: 8px;
-    font-size: 25px;
+    font-size: 15px;
     font-weight: bold;
     outline: none;
 }
