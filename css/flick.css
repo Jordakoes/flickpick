@@ -258,4 +258,9 @@ span#year {
         margin-bottom: 5%;
         width: 85%;
     }
+
+    .flex-btn {
+        /* TODO: Debatable */
+        justify-content: space-between;
+    }
 }
