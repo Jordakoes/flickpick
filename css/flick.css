@@ -110,6 +110,10 @@ body, html, .wrapper {
 /* FIXME: Is this needed? */
 .flex-btn {
     display: flex;
+    align-items: center;
+	justify-content: space-between;
+    background-color: pink;
+    width: 85%;
 }
 
 /* TODO: Size the buttons! */
@@ -118,10 +122,10 @@ body, html, .wrapper {
     align-items: center;
     justify-content: center;
 
-    margin: 20px;
+    /* margin: 20px; */
 
     border: none;
-    height: 30px;
+    height: 50px;
     width: 150px;
     border-radius: 8px;
     font-size: 15px;

@@ -20,6 +20,8 @@
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <!-- Load AOSjs (scrollreveal) -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Favicon TODO: Increase size of favicon! -->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
 </head>
 <body>
 
@@ -56,8 +58,10 @@
                 </div>
 
             </div>
-                
-            <div class="OMDb-API-Description">
+            <!-- TODO: animation fadeInUp could be more efficient if 
+            it was only placed on the grid container and not on all 
+            children classes -->
+            <div class="OMDb-API-Description animation-settings animated fadeInUp">
                 <h1 id="movie-title">Movie title</h1>
                 <h2 id="duration">Duration</h2>
                 <h3 id="plot">Plot</h3>
@@ -67,7 +71,7 @@
                 </div>
             </div>
 
-            <div class="OMDb-API-Poster">
+            <div class="OMDb-API-Poster animation-settings animated fadeInUp">
                 <img id="poster" src="/images/lordofwar.jpg">
                 <button id="next-btn" class="rating-btn">Next movie</button>
             </div>

@@ -15,7 +15,7 @@ function apiCall() {
     
     
     {
-        // console.log(response);
+        console.log(response);
 
         // console.log(response.Title);
         var title = response.Title;
@@ -49,6 +49,12 @@ function apiCall() {
         var rating = response.Ratings[0].Value;
         if(rating !== "N/A" || "undefined"){
             $('#IMDb-btn').text("IMDb rating: " + rating);
+        }
+
+        //console.log(response.Ratings[0].Value);
+        var rating = response.Ratings[1].Value;
+        if(rating !== "N/A" || "undefined"){
+            $('#RT-btn').text("Rotten rating: " + rating);
         }
     });
 }
