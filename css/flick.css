@@ -20,22 +20,25 @@ body, html, .wrapper {
     grid-template-rows: .1fr 1fr;
     grid-gap: 0;
     grid-template-areas: 
-    ". ." 
-    ". .";
+    "navbar navbar" 
+    "description poster";
+}
+
+.Navbar { 
+    /* grid-area: 1 / 1 / 2 / 3;  */
+    grid-area: navbar; 
 }
 
 .OMDb-API-Description { 
-    grid-area: 2 / 1 / 3 / 2; 
+    /* grid-area: 2 / 1 / 3 / 2;  */
+    grid-area: description; 
 }
     
 .OMDb-API-Poster { 
-    grid-area: 2 / 2 / 3 / 3; 
+    /* grid-area: 2 / 2 / 3 / 3;  */
+    grid-area: poster; 
 }
     
-.Navbar { 
-    grid-area: 1 / 1 / 2 / 3; 
-}
-
 .Navbar {
     background-color: slateblue;
 }
@@ -45,20 +48,6 @@ body, html, .wrapper {
     padding-top: 0;
     padding-bottom: 0;
     height: 10%;
-}
-
-#poster {
-    width: 70%;
-    height: 70%;
-    /* TODO: Set responsive dimensions for 
-    the poster */
-
-    /* Half the origin dimensions */
-    max-height: 597px;
-    max-width: 400px;
-    border-radius: 8px;
-
-    margin-bottom: 20px;
 }
 
 .OMDb-API-Description {
@@ -78,13 +67,28 @@ body, html, .wrapper {
     background-color: salmon
 }
 
+#poster {
+    width: 85%;
+    height: 70%;
+    /* TODO: Set responsive dimensions for 
+    the poster */
+
+    /* Half the origin dimensions */
+    max-height: 597px;
+    max-width: 400px;
+    border-radius: 8px;
+
+    margin-bottom: 20px;
+}
+
 #movie-title {
-    font-size: 4em;
+    font-size: 3em;
     margin: 0;
     padding: 0;
-
+    width: 85%; 
+    /* max-width: 85%;
     width: 85%;
-    height: 20%;
+    height: 40%; */
     background-color: pink;
 
 }
@@ -148,4 +152,71 @@ body, html, .wrapper {
 .animation-settings {
     animation-duration: .7s;
     animation-delay: 2.5s;
+}
+
+
+/* Smaller screens */
+@media screen and (max-width: 600px) {
+
+    .grid-container {
+        display: grid;
+        height: 125%;
+        grid-template-columns: auto;
+        /* TODO: Check sizing of the navbar */
+        grid-template-rows: 10% 1fr 1fr;
+        grid-gap: 0;
+        grid-template-areas: 
+        "navbar" 
+        "description"
+        "poster";
+    }
+
+    #poster {
+        width: 85%;
+        height: 70%;
+        /* TODO: Set responsive dimensions for 
+        the poster */
+    
+        /* Half the origin dimensions */
+        max-height: 597px;
+        max-width: 400px;
+        border-radius: 8px;
+    
+        margin-bottom: 20px;
+    }
+    
+    #movie-title {
+        font-size: 2em;
+        margin: 0;
+        padding: 0;
+        width: 85%; 
+        /* max-width: 85%;
+        width: 85%;
+        height: 40%; */
+        background-color: pink;
+    
+    }
+    
+    #duration {
+        font-size: 1.2em;
+        margin: 0;
+        padding: 0;
+    
+        width: 85%;
+        height: 7%;
+        background-color: purple;
+    }
+    
+    #plot {
+        font-size: 1.1em;
+    
+        width: 85%;
+        height: 30%;
+        background-color: salmon;
+    }
+
+    /* TODO: Check sizing of the navbar */
+    #navbar {
+        height: 10%;
+    }
 }

@@ -15,7 +15,7 @@ function apiCall() {
     
     
     {
-        console.log(response);
+        //console.log(response);
 
         // console.log(response.Title);
         var title = response.Title;
@@ -24,7 +24,7 @@ function apiCall() {
             $('#movie-title').text(title);
         }
 
-        console.log(response.Runtime);
+        //console.log(response.Runtime);
         var runtime = response.Runtime;
 
         if(runtime !== "N/A" || "undefined"){
@@ -59,6 +59,16 @@ function apiCall() {
     });
 }
 
-$('#next-btn').click(function(){
+
+// Run the function on page load
+$( document ).ready(function() {
     apiCall();
+});
+
+// Run the function on #next-btn click
+//  TODO: Replacing text not working...
+$( "#next-btn" ).click(function() {
+    // alert( "Handler for .click() called." );
+    $('#preloader-text').text("New text");
+    location.reload();
 });
