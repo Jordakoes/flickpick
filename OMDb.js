@@ -16,19 +16,22 @@ function apiCall() {
     
     {
         //console.log(response);
+        console.log(response.Year);
 
         // console.log(response.Title);
         var title = response.Title;
+        var year = response.Year;
         //If there is no poster available then:
         if(title !== "N/A" || "undefined"){
-            $('#movie-title').text(title);
+            $('#title').text(title);
+            $('#year').text(year);
         }
 
         //console.log(response.Runtime);
         var runtime = response.Runtime;
-
+        //If there is no runtime avaiable then:
         if(runtime !== "N/A" || "undefined"){
-             $('#duration').text(runtime);
+            $('#duration').text(runtime);
         }
         
         //console.log(response.Poster);

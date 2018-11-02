@@ -105,6 +105,11 @@ body, html, .wrapper {
 
 }
 
+/* Release year styling */
+span#year {
+    color: #E6B31E;
+}
+
 #duration {
     font-size: 3em;
     margin: 0;
@@ -175,13 +180,12 @@ body, html, .wrapper {
     animation-delay: 2.5s;
 }
 
-
 /* Smaller screens */
 @media screen and (max-width: 600px) {
 
     .grid-container {
         display: grid;
-        height: 125%;
+        height: 100%;
         grid-template-columns: auto;
         /* TODO: Check sizing of the navbar */
         grid-template-rows: 10% 1fr 1fr;
@@ -207,18 +211,12 @@ body, html, .wrapper {
     }
     
     #movie-title {
-        font-size: 2em;
-        margin: 0;
-        padding: 0;
-        width: 85%; 
-        /* max-width: 85%;
-        width: 85%;
-        height: 40%; */ 
+        font-size: 3em;
     }
     
     #duration {
         font-size: 1.2em;
-        margin: 0;
+        margin: 10px 0 0 0;
         padding: 0;
     
         width: 85%;
