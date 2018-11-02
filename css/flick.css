@@ -1,4 +1,4 @@
-/* TODO: Fix weird pink bar
+S/* TODO: Fix weird pink bar
 Caused by: navbar isn't the full height
 of the space given by grid...
 currently fixed by matching padding 
@@ -92,7 +92,7 @@ body, html, .wrapper {
 }
 
 #movie-title {
-    font-size: 3em;
+    font-size: 5em;
     margin: 0;
     padding: 0;
     width: 85%; 
@@ -126,7 +126,7 @@ span#year {
     font-size: 1.5em;
 
     width: 85%;
-    height: 30%;
+    /* height: 30%; */
 
     background-color: #111517;
     /* background-color: salmon; */
@@ -136,7 +136,7 @@ span#year {
 .flex-btn {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: start;
 
     background-color: #111517;
     /* background-color: pink; */
@@ -149,18 +149,15 @@ span#year {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    /* margin: 20px; */
-
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
     border: none;
+    outline: none;
+    color: #202020;
+    /* Sizing */
     height: 50px;
     width: 150px;
-    border-radius: 8px;
-    font-size: 15px;
-    font-weight: bold;
-    outline: none;
-
-    color: #202020;
 }
 
 .rating-btn:hover {
@@ -169,15 +166,43 @@ span#year {
 
 #IMDb-btn {
     background-color: #f5de50;
+    margin-right: 5%;
 }
 
 #RT-btn {
     background-color: #ed1c27;
 }
 
+#next-btn {
+    background-color:#E6B31E; 
+}
+
 .animation-settings {
     animation-duration: .7s;
     animation-delay: 2.5s;
+}
+
+/* Smaller screens */
+@media screen and (max-width: 1600px) {
+    #movie-title {
+        font-size: 4em;
+    }
+
+    #duration {
+        font-size: 2.5em;
+    }
+}
+
+
+/* iPad */
+@media screen and (max-width: 1000px) {
+    #movie-title {
+        font-size: 3em;
+    }
+
+    #duration {
+        font-size: 2em;
+    }
 }
 
 /* Smaller screens */
@@ -199,14 +224,7 @@ span#year {
     #poster {
         width: 85%;
         height: 70%;
-        /* TODO: Set responsive dimensions for 
-        the poster */
-    
-        /* Half the origin dimensions */
-        max-height: 597px;
-        max-width: 400px;
         border-radius: 8px;
-    
         margin-bottom: 20px;
     }
     
@@ -233,5 +251,11 @@ span#year {
     /* TODO: Check sizing of the navbar */
     #navbar {
         height: 10%;
+    }
+
+    #next-btn {
+        /* TODO: Remove margin after footer is used */
+        margin-bottom: 5%;
+        width: 85%;
     }
 }

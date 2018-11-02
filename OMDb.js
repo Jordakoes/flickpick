@@ -51,13 +51,13 @@ function apiCall() {
         //console.log(response.Ratings[0].Value);
         var rating = response.Ratings[0].Value;
         if(rating !== "N/A" || "undefined"){
-            $('#IMDb-btn').text("IMDb rating: " + rating);
+            $('#IMDb-btn').text("IMDb " + rating);
         }
 
         //console.log(response.Ratings[0].Value);
         var rating = response.Ratings[1].Value;
         if(rating !== "N/A" || "undefined"){
-            $('#RT-btn').text("Rotten rating: " + rating);
+            $('#RT-btn').text("Rotten " + rating);
         }
     });
 }
@@ -75,3 +75,11 @@ $( "#next-btn" ).click(function() {
     $('#preloader-text').text("New text");
     location.reload();
 });
+
+//
+
+window.scrollTo({
+    top: 100,
+    left: 100,
+    behavior: 'smooth'
+  });
