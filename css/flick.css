@@ -9,7 +9,10 @@ body, html, .wrapper {
     font-family: 'Karla', sans-serif;
     /* FIXME: Weird empty space under navbar
     or under grid, background-color is temp fix*/
-    background-color: pink;
+
+    /* background-color: pink; */
+
+    background-color: #111517;
     margin: 0;
 }
   
@@ -40,7 +43,9 @@ body, html, .wrapper {
 }
     
 .Navbar {
-    background-color: slateblue;
+    background-color: #111517;
+
+    /* background-color: slateblue; */
 }
 
 /* FIXME: Ugly fix for navbar size */
@@ -55,7 +60,10 @@ body, html, .wrapper {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #202020;
+
+    background-color: #111517;
+    /* background-color: #202020; */
+
     color: #f2f2f2;
 }
 
@@ -64,7 +72,9 @@ body, html, .wrapper {
     align-items: center;
     justify-content: center;  
     flex-direction: column;
-    background-color: salmon
+
+    background-color: #111517;
+    /* background-color: salmon */
 }
 
 #poster {
@@ -89,7 +99,9 @@ body, html, .wrapper {
     /* max-width: 85%;
     width: 85%;
     height: 40%; */
-    background-color: pink;
+
+    background-color: #111517;
+    /* background-color: pink; */
 
 }
 
@@ -100,7 +112,9 @@ body, html, .wrapper {
 
     width: 85%;
     height: 7%;
-    background-color: purple;
+
+    background-color: #111517;
+    /* background-color: purple; */
 }
 
 #plot {
@@ -108,15 +122,20 @@ body, html, .wrapper {
 
     width: 85%;
     height: 30%;
-    background-color: salmon;
+
+    background-color: #111517;
+    /* background-color: salmon; */
 }
 
 /* FIXME: Is this needed? */
 .flex-btn {
     display: flex;
     align-items: center;
-	justify-content: space-between;
-    background-color: pink;
+    justify-content: space-between;
+
+    background-color: #111517;
+    /* background-color: pink; */
+
     width: 85%;
 }
 
@@ -135,6 +154,8 @@ body, html, .wrapper {
     font-size: 15px;
     font-weight: bold;
     outline: none;
+
+    color: #202020;
 }
 
 .rating-btn:hover {
@@ -164,7 +185,7 @@ body, html, .wrapper {
         grid-template-columns: auto;
         /* TODO: Check sizing of the navbar */
         grid-template-rows: 10% 1fr 1fr;
-        grid-gap: 0;
+        grid-gap: 25px;
         grid-template-areas: 
         "navbar" 
         "description"
@@ -192,9 +213,7 @@ body, html, .wrapper {
         width: 85%; 
         /* max-width: 85%;
         width: 85%;
-        height: 40%; */
-        background-color: pink;
-    
+        height: 40%; */ 
     }
     
     #duration {
@@ -204,7 +223,6 @@ body, html, .wrapper {
     
         width: 85%;
         height: 7%;
-        background-color: purple;
     }
     
     #plot {
@@ -212,7 +230,6 @@ body, html, .wrapper {
     
         width: 85%;
         height: 30%;
-        background-color: salmon;
     }
 
     /* TODO: Check sizing of the navbar */
