@@ -116,6 +116,11 @@ footer .heart {
     color: #f02b67;
 }
 
+.footer-link {
+	text-decoration: none;
+	color: #E6B31E;
+}
+
 /* Smaller screens */
 @media screen and (max-width: 1200px) {
 	

@@ -34,8 +34,9 @@
         <div class="overlay">      
             <div class="text">
                 <ul>
-                    <li>Vibes</li>
-                    <li>About us</li>
+                    <!-- TODO: Text is wrapped in li, a, and h3 can this be cleaner? -->
+                    <li href="flick.html"><a class="nav-link" href="index.html"><h3>Vibes</h3></a></li>
+                    <li href="flick.html"><a class="nav-link" href="https://jordakoes.github.io/" target="_blank"><h3>About us</h3></a></li>
                 </ul>
             </div>
         </div>
@@ -81,8 +82,9 @@
                 
             </div>
 
-            <footer>
-                <p>Made with <span class="heart">❤</span> in The Netherlands.</p>
+            <!-- TODO: Animation not working on footer -->
+            <footer class="animation-settings animated fadeInUp">
+                <p>Made with <span class="heart">❤</span> in The Netherlands. <br> Source code on <a class="footer-link" href="https://github.com/jordakoes/flickpick" target="_blank">Github</a> </p>
             </footer>
             
         </main>
@@ -92,11 +94,11 @@
     <!-- Load personal js file -->
     <script src="preloader.js"></script>
     <script src="navbar.js"></script>
-    <!-- Load AOS js file -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- TODO: See if AOS has a use on the site; Load AOS js file -->
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
-    </script>
+    </script> -->
     
 </body>
 </html>

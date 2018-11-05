@@ -38,6 +38,14 @@ ul li{
 
 ul:hover li:hover {
   transform: translateX(-10px);
+}
+
+a.nav-link {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+a.nav-link:hover {
   color: #FFCD3C;
 }
 
