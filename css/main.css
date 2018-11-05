@@ -15,6 +15,10 @@ html {
 	font-family: 'Karla', sans-serif;
 }
 
+/* .blur-test {
+	filter: blur(50px);
+} */
+
 .content {
 	margin: 100px auto;
 	max-width: 70em;
@@ -78,8 +82,11 @@ a.vibe-box {
 	cursor: pointer;
 	/* transform: translateX(-10px); */
 	transform: scale(1.1);
+}
+
+.vibe-box:hover .blur-text {
 	font-size: 0;
-	/* transition-delay: .1s; */
+	filter: blur(50px);
 }
 
 /* To show descriptive text in the vibe box */
